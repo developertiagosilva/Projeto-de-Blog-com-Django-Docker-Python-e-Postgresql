@@ -1,7 +1,24 @@
+# === Configurações Específicas do Nosso Projeto Docker/Postgres ===
+
+# Banco de dados local do Docker Postgres (NUNCA suba esta pasta)
+pgdata/
+data/postgres/
+
+# Arquivos de variáveis de ambiente com senhas do banco (Segurança!)
+.env
+*.env
+
+# Arquivo do gunicorn digitado errado no seu original (correção ortográfica)
+gunicorn-error.log
+gunicorn-access.log
+
+# Ignorar o build do Docker caso ele gere arquivos locais
+.docker/
+
 /djangoapp/static/
 /djangoapp/media/
 /djangoapp/project/local_settings.py
-guicorn-error-log
+
 __localcode
 /data/
 
